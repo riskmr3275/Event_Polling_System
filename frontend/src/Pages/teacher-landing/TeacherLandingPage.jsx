@@ -7,7 +7,7 @@ import eyeIcon from "../../assets/eye.svg";
 let apiUrl =
   import.meta.env.VITE_NODE_ENV === "production"
     ? import.meta.env.VITE_API_BASE_URL
-    : "http://localhost:5500";
+    : "https://event-polling-system.onrender.com";
 const socket = io(apiUrl);
 const TeacherLandingPage = () => {
   const [question, setQuestion] = useState("");
